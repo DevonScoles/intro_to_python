@@ -17,12 +17,19 @@ print("="*15,'Replacing Characters or Words within an existing String',"="*15)
 new_message = message.replace('Hello','Goodbye') #replace() will replace the old world with a new one
 print(new_message)
 message = message.replace('World','earth')
+print('This is our new message:', new_message)
 print(message)
 
 print("="*15,'Manipulating String data Cont. (adding strings together)',"="*15)
-
-
-
+combined_message = message + ',' +new_message
+print(combined_message)
+print(f'{message} , {new_message} and goodbye! ')
+print('{}, {} and goodnight!'.format(message, new_message), '\n')
 
 
 print("="*15,'How is this important/useful???','='*15)
+user_name = str(input("whats your name? "))
+print(user_name)
+user_sirname = str(input("whats ur last name? "))
+full_name = user_name + " " + user_sirname
+print(full_name)
